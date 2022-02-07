@@ -9,9 +9,9 @@ public class VectorsTest : MonoBehaviour
 
     void Start()
     {
-        Coordinates vector1 = new Coordinates(_vector1.x, _vector1.y, _vector1.z);
-        Coordinates vector2 = new Coordinates(_vector2.x, _vector2.y, _vector2.z);
-        Coordinates vector3 = new Coordinates(_vector3.x, _vector3.y, _vector3.z);
+        Coordinates vector1 = new Coordinates(_vector1);
+        Coordinates vector2 = new Coordinates(_vector2);
+        Coordinates vector3 = new Coordinates(_vector3);
 
         float volume = Mathematics.Volume(vector1, vector2, vector3);
         Debug.Log("Volume is : " + volume);
